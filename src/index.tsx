@@ -4,6 +4,7 @@ import './styles/index.css';
 import App from './pages/App';
 import reportWebVitals from './reportWebVitals';
 import Howto from './pages/Howto/index';
+import Sample from './pages/Howto/sample/index'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 const root = ReactDOM.createRoot(
@@ -15,6 +16,12 @@ root.render(
       <Routes>
         <Route path='/' element={<App />} />
         <Route path='howto' element={<Howto />} />
+        <Route path='howto/sample' element={<Sample />} />
+        <Route path='*' element={
+          <main>
+            <p>404えらー</p>
+          </main>
+        } />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
