@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './styles/index.css';
 import App from './pages/App';
 import reportWebVitals from './reportWebVitals';
+import Howto from './pages/Howto/index';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 const root = ReactDOM.createRoot(
@@ -13,6 +14,7 @@ root.render(
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<App />} />
+        <Route path='howto' element={<Howto />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
