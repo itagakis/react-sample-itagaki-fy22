@@ -4,6 +4,7 @@ import './styles/index.css';
 import App from './pages/App';
 import reportWebVitals from './reportWebVitals';
 import Howto from './pages/Howto/index';
+import Todo from './pages/Todo';
 import Sample from './pages/Howto/sample/index'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
@@ -17,6 +18,7 @@ root.render(
         <Route path='/' element={<App />} />
         <Route path='howto' element={<Howto />} />
         <Route path='howto/sample' element={<Sample />} />
+        <Route path='todo' element={<Todo />} />
         <Route path='*' element={
           <main>
             <p>404えらー</p>
